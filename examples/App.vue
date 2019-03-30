@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    App.vue
+    <MqbHeader></MqbHeader>
+    <div class="main">App.vue</div>
+    <!-- <MqbFooter></MqbFooter> -->
   </div>
 </template>
 
 <script>
+import MqbHeader from './components/Header'
+// import MqbFooter from './components/Footer'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    MqbHeader
+    // MqbFooter
+  }
 }
 </script>
 
@@ -15,6 +24,5 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
 </style>
