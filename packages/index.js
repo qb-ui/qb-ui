@@ -1,11 +1,7 @@
-import Button from './button/index.js'
-// import Row from './row/index'
-// import Col from './col/index'
+import qbButton from './button/index.js'
 
 const components = [
-  Button
-  // Row,
-  // Col
+  qbButton
 ]
 
 const install = function (Vue) {
@@ -19,7 +15,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Button
-  // Row,
-  // Col
+  qbButton
 }

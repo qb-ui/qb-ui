@@ -1,26 +1,19 @@
 <template>
   <div id="app">
-    <MqbHeader></MqbHeader>
-    <div class="main">App.vue</div>
-    <!-- <MqbFooter></MqbFooter> -->
+    <qb-button>一个按钮</qb-button>
+    <!-- <div class="main">App.vue</div> -->
   </div>
 </template>
 
 <script>
-import MqbHeader from './components/Header'
-// import MqbFooter from './components/Footer'
-
 export default {
-  name: 'App',
-  components: {
-    MqbHeader
-    // MqbFooter
-  }
+  name: 'App'
 }
 </script>
 
 <style>
 #app {
+  padding: 20px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

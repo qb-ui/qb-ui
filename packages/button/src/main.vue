@@ -1,22 +1,10 @@
 <template>
-  <button
-    @click="$emit('click')"
-    class="w__button"
-    :disabled="disabled"
-    :class="[
-    'w__button--'+type,
-    {'is-plain': plain, 'is-disabled': disabled, 'is-round': round},
-    'w__button--size-'+size
-    ]"
-  >
-    <i v-if="icon !== ''" :class="icon"></i>
-    <slot></slot>
-  </button>
+  <button class="qb_button">默认按钮</button>
 </template>
 
 <script>
 export default {
-  name: 'WButton',
+  name: 'qbButton',
   props: {
     type: {
       type: String,
@@ -33,11 +21,22 @@ export default {
     plain: Boolean,
     disabled: Boolean,
     round: Boolean
-  },
-  data() {
-    return {
-      msg: 'button'
-    }
   }
 }
 </script>
+
+<style scoped>
+.qb_button {
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  color: #606266;
+  background-color: #fff;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+}
+.qb_button:hover {
+  color: #409eff;
+  border: 1px solid #409eff;
+}
+</style>

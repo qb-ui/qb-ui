@@ -1,7 +1,7 @@
-import Button from './src/button.vue'
+import qbButton from './src/main.vue'
 
-Button.install = function (Vue) {
-  Vue.component(Button.name, Button)
+qbButton.install = function (Vue) {
+  Vue.component(qbButton.name, qbButton)
 }
 
-export default Button
+export default qbButton

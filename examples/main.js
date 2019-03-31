@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import 'normalize.css'
 
+import qbUI from './../packages'
+
+Vue.use(qbUI)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
