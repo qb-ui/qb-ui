@@ -1,4 +1,4 @@
-## mqb-custom-ui
+## qb-ui
 
 Vue 自定义组件库
 
