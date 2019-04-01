@@ -4,7 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import 'normalize.css'
 
-import qbUI from './../packages'
+import qbUI from '../packages'
+import '../packages/theme-default/lib/index.css'
 
 Vue.use(qbUI)
 

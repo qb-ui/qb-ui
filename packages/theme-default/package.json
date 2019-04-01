@@ -1,0 +1,19 @@
+{
+  "name": "qb-ui-theme-default",
+  "version": "1.0.0",
+  "description": "qb-ui default theme",
+  "main": "lib/index.css",
+  "scripts": {
+    "dev": "gulp build && gulp watch",
+    "build": "gulp build"
+  },
+  "author": "wmaqingbo",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
