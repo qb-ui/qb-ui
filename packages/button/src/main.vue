@@ -1,5 +1,15 @@
 <template>
-  <button class="qb-button">默认按钮</button>
+  <button
+    class="qb-button"
+    @click="$emit('click')"
+    :disabled="disabled"
+    :class="[
+    type ? 'qb-button--' + type : '',
+    buttonSize ? 'qb-button--' + buttonSize : '',
+    {'is-plain': plain, 'is-disabled': disabled, 'is-round': round, 'is-circle': circle},]"
+  >
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -10,7 +20,7 @@ export default {
       type: String,
       default: 'default'
     },
-    size: {
+    buttonSize: {
       type: String,
       default: 'default'
     },
@@ -20,7 +30,8 @@ export default {
     },
     plain: Boolean,
     disabled: Boolean,
-    round: Boolean
+    round: Boolean,
+    circle: Boolean
   }
 }
 </script>
