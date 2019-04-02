@@ -21,24 +21,24 @@ module.exports = {
     // 为以下路由添加侧边栏
     sidebar: {
       '/componentDoc/': [{
-          title: '布局类组件',
+          title: '基本组件',
           collapsable: true,
           children: [
             'base/Button.md'
           ]
         },
         {
-          title: '可视化组件',
+          title: '表单类组件',
           collapsable: true,
           children: []
         },
         {
-          title: '工具类组件',
+          title: '弹窗类组件',
           collapsable: true,
           children: []
         },
         {
-          title: '方法类函数',
+          title: '导航类组件',
           collapsable: true,
           children: []
         }
