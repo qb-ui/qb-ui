@@ -1,6 +1,6 @@
 module.exports = {
   title: 'qb-ui',
-  description: '自定义 Vue 组件库',
+  description: '一个 Vue 组件库',
   dest: './dist',
   port: 8081,
   base: '/qb-ui/',
