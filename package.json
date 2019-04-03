@@ -4,6 +4,25 @@
   "description": "wmaqingbo自定义组件库",
   "author": "wmaqingbo <wmaqingbo@163.com>",
   "private": true,
+  "keywords": [
+    "qb-ui",
+    "96-ui",
+    "vue",
+    "组件库"
+  ],
+  "main": "dist/qb-ui.min.js",
+  "files": [
+    "dist",
+    "packages"
+  ],
+  "homepage": "https://qb-ui.github.io/qb-ui/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qb-ui/qb-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qb-ui/qb-ui/issues"
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
