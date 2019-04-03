@@ -3,6 +3,8 @@ module.exports = {
   description: '自定义 Vue 组件库',
   dest: './dist',
   port: 8081,
+  base: '/qb-ui/',
+  repo: 'https://github.com/wmaqingbo/qb-ui',
   themeConfig: {
     // 添加导航栏
     nav: [{
