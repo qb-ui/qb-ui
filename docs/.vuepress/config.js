@@ -4,7 +4,7 @@ module.exports = {
   dest: './dist',
   port: 8081,
   base: '/qb-ui/',
-  repo: 'https://github.com/wmaqingbo/qb-ui',
+  repo: 'https://github.com/qb-ui/qb-ui',
   themeConfig: {
     // 添加导航栏
     nav: [{
