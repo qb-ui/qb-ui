@@ -26,11 +26,11 @@ title: 'Button 按钮'
     </div>
     <div>
       <qb-button round>圆角按钮</qb-button>
-      <qb-button type="primary" round>主要</qb-button>
-      <qb-button type="success" round>成功</qb-button>
-      <qb-button type="info" round>信息</qb-button>
-      <qb-button type="warning" round>警告</qb-button>
-      <qb-button type="danger" round>危险</qb-button>
+      <qb-button type="primary" round>主要按钮</qb-button>
+      <qb-button type="success" round>成功按钮</qb-button>
+      <qb-button type="info" round>信息按钮</qb-button>
+      <qb-button type="warning" round>警告按钮</qb-button>
+      <qb-button type="danger" round>危险按钮</qb-button>
     </div>
     <div>
       <qb-button circle>圆</qb-button>
@@ -61,11 +61,11 @@ title: 'Button 按钮'
     </div>
     <div>
       <qb-button round>圆角按钮</qb-button>
-      <qb-button type="primary" round>主要</qb-button>
-      <qb-button type="success" round>成功</qb-button>
-      <qb-button type="info" round>信息</qb-button>
-      <qb-button type="warning" round>警告</qb-button>
-      <qb-button type="danger" round>危险</qb-button>
+      <qb-button type="primary" round>主要按钮</qb-button>
+      <qb-button type="success" round>成功按钮</qb-button>
+      <qb-button type="info" round>信息按钮</qb-button>
+      <qb-button type="warning" round>警告按钮</qb-button>
+      <qb-button type="danger" round>危险按钮</qb-button>
     </div>
     <div>
       <qb-button circle>圆</qb-button>
@@ -77,3 +77,18 @@ title: 'Button 按钮'
     </div>
   </highlight-code>
 </demo-block>
+
+### 参数说明
+
+| 参数        | 说明           | 类型    | 可选值                                             | 默认值 |
+| ----------- | -------------- | ------- | -------------------------------------------------- | ------ |
+| size        | 尺寸           | string  | medium / small / mini                              | —     |
+| type        | 类型           | string  | primary / success / warning / danger / info / text | —     |
+| plain       | 是否朴素按钮   | boolean | —                                                 | false  |
+| round       | 是否圆角按钮   | boolean | —                                                 | false  |
+| circle      | 是否圆形按钮   | boolean | —                                                 | false  |
+| loading     | 是否加载中状态 | boolean | —                                                 | false  |
+| disabled    | 是否禁用状态   | boolean | —                                                 | false  |
+| icon        | 图标类名       | string  | —                                                 | —     |
+| autofocus   | 是否默认聚焦   | boolean | —                                                 | false  |
+| native-type | 原生 type 属性 | string  | button / submit / reset                            | button |

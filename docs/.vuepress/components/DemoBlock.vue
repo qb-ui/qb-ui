@@ -61,6 +61,9 @@ export default {
       border-bottom: 1px solid #ddd;
       > div {
         margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
