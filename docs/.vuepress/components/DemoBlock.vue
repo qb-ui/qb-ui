@@ -50,6 +50,11 @@ export default {
 .demo {
     // box-shadow: 0 0 2px 0 rgba(232, 237, 250, 0.6),
     //   0 1px 2px 0 rgba(232, 237, 250, 0.5);
+  .demo--title {
+    p {
+      white-space: pre-wrap;
+    }
+  }
   .demo--wrap {
     border: 1px solid #DCDFE6;
     border-bottom: none;
