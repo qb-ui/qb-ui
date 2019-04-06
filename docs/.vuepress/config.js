@@ -21,12 +21,14 @@ module.exports = {
       }
     ],
     // 为以下路由添加侧边栏
+    sidebarDepth: 0,
     sidebar: {
       '/componentDoc/': [{
           title: '基本组件',
           collapsable: true,
           children: [
-            'base/Button.md'
+            'base/Button.md',
+            'base/Layout.md'
           ]
         },
         {

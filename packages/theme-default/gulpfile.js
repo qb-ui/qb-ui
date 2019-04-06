@@ -1,9 +1,10 @@
 'use strict'
 
 const {
-  series,
   src,
-  dest
+  dest,
+  watch,
+  series
 } = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
@@ -26,6 +27,6 @@ function compile () {
 //     .pipe(dest('./lib/fonts'))
 // }
 
+exports.watch = watch(['./src/*.scss'], compile)
 // gulp.series 用于串行（ 顺序） 执行
-// exports.build = series(compile, copyfont)
 exports.build = series(compile)
