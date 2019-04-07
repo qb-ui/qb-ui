@@ -146,7 +146,7 @@ title: 'Layout 布局'
   </highlight-code>
 </demo-block>
 
-<demo-block title="对齐方式" desc="通过 flex 布局来对分栏进行灵活的对齐。将 type 属性赋值为 'flex'，可以启用 flex 布局，并可通过 justify 属性来指定 start, center, end, space-between, space-around 其中的值来定义子元素的排版方式。">
+<demo-block title="对齐方式" desc="通过 flex 布局来对分栏进行灵活的对齐。<br/>将 type 属性赋值为 'flex'，可以启用 flex 布局，并可通过 justify 属性来指定 start, center, end, space-between, space-around 其中的值来定义子元素的排版方式。">
   <template slot="demoContent">
     <qb-row type="flex">
       <qb-col :span="6"><grid-content bg2></grid-content></qb-col>
@@ -224,9 +224,9 @@ title: 'Layout 布局'
   </highlight-code>
 </demo-block>
 
-## 参数说明
+### 参数说明
 
-### Row 组件参数
+**Row 组件参数**
 
 | 参数    | 说明                                  | 类型   | 可选值                                      | 默认值 |
 | ------- | ------------------------------------- | ------ | ------------------------------------------- | ------ |
@@ -236,7 +236,7 @@ title: 'Layout 布局'
 | align   | flex 布局下的垂直排列方式             | string | top/middle/bottom                           | top    |
 | tag     | 自定义元素标签                        | string | \*                                          | div    |
 
-### Col 组件参数
+**Col 组件参数**
 
 | 参数   | 说明                                 | 类型                                        | 可选值 | 默认值 |
 | ------ | ------------------------------------ | ------------------------------------------- | ------ | ------ |

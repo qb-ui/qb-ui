@@ -1,8 +1,8 @@
 <template>
   <div class="demo">
     <div class="demo--title">
-      <h3>{{title}}</h3>
-      <p>{{desc}}</p>
+      <h3 v-html="title"></h3>
+      <p v-html="desc"></p>
     </div>
     <div class="demo--wrap">
       <div class="demo-content">
