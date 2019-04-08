@@ -30,12 +30,21 @@ module.exports = {
     sidebarDepth: 0,
     sidebar: {
       '/componentDoc/': [{
+          title: '使用指南',
+          collapsable: true,
+          children: [
+            'guide/installion.md',
+            'guide/quickstart.md',
+            'guide/transition.md'
+          ]
+        }, 
+        {
           title: '基本组件',
           collapsable: true,
           children: [
-            'base/Layout.md',
-            'base/Icon.md',
-            'base/Button.md'
+            'base/layout.md',
+            'base/icon.md',
+            'base/button.md'
           ]
         },
         {
