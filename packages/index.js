@@ -1,9 +1,11 @@
 import qbButton from './button/index'
+import qbIcon from './icon/index'
 import qbRow from './row/index'
 import qbCol from './col/index'
 
 const components = [
   qbButton,
+  qbIcon,
   qbRow,
   qbCol
 ]
@@ -20,6 +22,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   qbButton,
+  qbIcon,
   qbRow,
   qbCol
 }
