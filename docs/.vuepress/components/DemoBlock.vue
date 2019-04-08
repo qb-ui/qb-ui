@@ -1,8 +1,8 @@
 <template>
   <div class="demo">
     <div class="demo--title">
-      <h3>{{title}}</h3>
-      <p>{{desc}}</p>
+      <h3 v-html="title"></h3>
+      <p v-html="desc"></p>
     </div>
     <div class="demo--wrap">
       <div class="demo-content">
@@ -12,7 +12,9 @@
     <div v-if="isShow" class="demo--highlight">
       <slot name="codeText"></slot>
     </div>
-    <div v-if="$slots.codeText" class="code--button" @click="handleToggleShow">{{codeTextBtn}}</div>
+    <div v-if="$slots.codeText" class="code--button" @click="handleToggleShow">
+      <span class="code--button--content">{{codeTextBtn}}</span>
+    </div>
   </div>
 </template>
 

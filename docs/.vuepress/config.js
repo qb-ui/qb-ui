@@ -5,6 +5,12 @@ module.exports = {
   port: 8081,
   base: '/qb-ui/',
   repo: 'https://github.com/qb-ui/qb-ui',
+  head: [
+    ['link', {
+      rel: 'icon',
+      href: `/favicon.ico`
+    }]
+  ],
   themeConfig: {
     // 添加导航栏
     nav: [{
@@ -24,11 +30,21 @@ module.exports = {
     sidebarDepth: 0,
     sidebar: {
       '/componentDoc/': [{
+          title: '使用指南',
+          collapsable: true,
+          children: [
+            'guide/installion.md',
+            'guide/quickstart.md',
+            'guide/transition.md'
+          ]
+        }, 
+        {
           title: '基本组件',
           collapsable: true,
           children: [
-            'base/Button.md',
-            'base/Layout.md'
+            'base/layout.md',
+            'base/icon.md',
+            'base/button.md'
           ]
         },
         {

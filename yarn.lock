@@ -10730,6 +10730,13 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-clipboard2@^0.3.0:
+  version "0.3.0"
+  resolved "http://registry.npm.taobao.org/vue-clipboard2/download/vue-clipboard2-0.3.0.tgz#b04d3f9a2d46f12ca85178445930b38463640b22"
+  integrity sha1-sE0/mi1G8SyoUXhEWTCzhGNkCyI=
+  dependencies:
+    clipboard "^2.0.0"
+
 vue-eslint-parser@^2.0.3:
   version "2.0.3"
   resolved "http://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"
