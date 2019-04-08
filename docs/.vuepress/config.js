@@ -34,8 +34,8 @@ module.exports = {
           collapsable: true,
           children: [
             'base/Layout.md',
-            'base/Button.md',
-            'base/Icon.md'
+            'base/Icon.md',
+            'base/Button.md'
           ]
         },
         {

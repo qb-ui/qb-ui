@@ -5,9 +5,11 @@
     :disabled="disabled"
     :class="[
     type ? 'qb-button--' + type : '',
-    buttonSize ? 'qb-button--' + buttonSize : '',
-    {'is-plain': plain, 'is-disabled': disabled, 'is-round': round, 'is-circle': circle},]"
+    size ? 'qb-button--' + size : '',
+    {'is-plain': plain, 'is-disabled': disabled, 'is-round': round, 'is-circle': circle,'is-loading': loading}]"
   >
+    <i class="qb-icon-loader" v-if="loading"></i>
+    <i :class="icon" v-if="icon && !loading"></i>
     <slot></slot>
   </button>
 </template>
@@ -20,7 +22,7 @@ export default {
       type: String,
       default: 'default'
     },
-    buttonSize: {
+    size: {
       type: String,
       default: 'default'
     },
@@ -28,6 +30,7 @@ export default {
       type: String,
       default: ''
     },
+    loading: Boolean,
     plain: Boolean,
     disabled: Boolean,
     round: Boolean,

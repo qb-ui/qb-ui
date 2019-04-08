@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <qb-button>一个按钮</qb-button>
-    <!-- <div class="main">App.vue</div> -->
+    <qb-row>
+      <qb-button>一个按钮</qb-button>
+    </qb-row>
+    <qb-row>
+      <i class="qb-icon qb-icon-md-add"></i>
+    </qb-row>
   </div>
 </template>
 
@@ -17,5 +21,10 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.qb-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
 }
 </style>

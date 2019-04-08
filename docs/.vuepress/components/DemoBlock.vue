@@ -12,7 +12,9 @@
     <div v-if="isShow" class="demo--highlight">
       <slot name="codeText"></slot>
     </div>
-    <div v-if="$slots.codeText" class="code--button" @click="handleToggleShow">{{codeTextBtn}}</div>
+    <div v-if="$slots.codeText" class="code--button" @click="handleToggleShow">
+      <span class="code--button--content">{{codeTextBtn}}</span>
+    </div>
   </div>
 </template>
 
