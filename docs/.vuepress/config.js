@@ -5,6 +5,12 @@ module.exports = {
   port: 8081,
   base: '/qb-ui/',
   repo: 'https://github.com/qb-ui/qb-ui',
+  head: [
+    ['link', {
+      rel: 'icon',
+      href: `/favicon.ico`
+    }]
+  ],
   themeConfig: {
     // 添加导航栏
     nav: [{
@@ -27,8 +33,9 @@ module.exports = {
           title: '基本组件',
           collapsable: true,
           children: [
+            'base/Layout.md',
             'base/Button.md',
-            'base/Layout.md'
+            'base/Icon.md'
           ]
         },
         {
