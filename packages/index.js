@@ -3,13 +3,15 @@ import qbButtonGroup from './button-group/index'
 import qbIcon from './icon/index'
 import qbRow from './row/index'
 import qbCol from './col/index'
+import qbTag from './tag/index'
 
 const components = [
   qbButton,
   qbButtonGroup,
   qbIcon,
   qbRow,
-  qbCol
+  qbCol,
+  qbTag
 ]
 
 const install = function (Vue) {
@@ -27,5 +29,6 @@ export default {
   qbButtonGroup,
   qbIcon,
   qbRow,
-  qbCol
+  qbCol,
+  qbTag
 }

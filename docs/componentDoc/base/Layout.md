@@ -32,24 +32,24 @@ title: 'Layout 布局'
 
   <highlight-code slot="codeText" lang="html">
     <qb-row>
-      <qb-col></qb-col>
+      <qb-col><grid-content bg2></grid-content></qb-col>
     </qb-row>
     <qb-row>
-      <qb-col :span="12"></qb-col>
-      <qb-col :span="12"></qb-col>
+      <qb-col :span="12"><grid-content bg2></grid-content></qb-col>
+      <qb-col :span="12"><grid-content bg3></grid-content></qb-col>
     </qb-row>
     <qb-row>
-      <qb-col :span="8"></qb-col>
-      <qb-col :span="8"></qb-col>
-      <qb-col :span="8"></qb-col>
+      <qb-col :span="8"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="8"><grid-content bg2></grid-content></qb-col>
+      <qb-col :span="8"><grid-content bg3></grid-content></qb-col>
     </qb-row>
     <qb-row>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
+      <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg2></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg2></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg2></grid-content></qb-col>
     </qb-row>
   </highlight-code>
 </demo-block>
@@ -67,13 +67,13 @@ title: 'Layout 布局'
   </template>
 
   <highlight-code slot="codeText" lang="html">
-    <qb-row :gutter="20"></qb-row>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
-      <qb-col :span="4"></qb-col>
+    <qb-row :gutter="20">
+      <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg2></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg2></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
+      <qb-col :span="4"><grid-content bg2></grid-content></qb-col>
     </qb-row>
   </highlight-code>
 </demo-block>
