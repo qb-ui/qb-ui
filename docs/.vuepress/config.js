@@ -44,7 +44,8 @@ module.exports = {
           children: [
             'base/layout.md',
             'base/icon.md',
-            'base/button.md'
+            'base/button.md',
+            'base/tag.md'
           ]
         },
         {
