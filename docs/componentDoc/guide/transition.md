@@ -47,3 +47,27 @@ title: '内置动画'
     </div>
   </highlight-code>
 </demo-block>
+
+<demo-block title="slide 滑入滑出" desc="提供 qb-slide-in-left、top、bottom、right 四种效果。">
+  <template slot="demoContent">
+    <TransitionDemoSlide></TransitionDemoSlide>
+  </template>
+
+  <highlight-code slot="codeText" lang="html">
+    <div>
+      <qb-button @click="handleButtonToggle">点我演示</qb-button>
+      <transition name="qb-slide-in-left">
+        <qb-button type="primary" v-show="buttonShow">qb-slide-in-left</qb-button>
+      </transition>
+      <transition name="qb-slide-in-top">
+      <qb-button type="primary" v-show="buttonShow">qb-slide-in-top</qb-button>
+      </transition>
+      <transition name="qb-slide-in-bottom">
+      <qb-button type="primary" v-show="buttonShow">qb-slide-in-bottom</qb-button>
+      </transition>
+      <transition name="qb-slide-in-right">
+      <qb-button type="primary" v-show="buttonShow">qb-slide-in-right</qb-button>
+      </transition>
+    </div>
+  </highlight-code>
+</demo-block>
