@@ -42,10 +42,10 @@ module.exports = {
           title: '基本组件',
           collapsable: false,
           children: [
-            'base/Layout.md',
-            'base/Icon.md',
-            'base/Button.md',
-            'base/Tag.md'
+            'base/BaseLayout.md',
+            'base/BaseIcon.md',
+            'base/BaseButton.md',
+            'base/BaseTag.md'
           ]
         },
         {
