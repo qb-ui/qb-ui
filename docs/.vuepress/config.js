@@ -31,7 +31,7 @@ module.exports = {
     sidebar: {
       '/componentDoc/': [{
           title: '使用指南',
-          collapsable: true,
+        collapsable: false,
           children: [
             'guide/installion.md',
             'guide/quickstart.md',
@@ -40,27 +40,27 @@ module.exports = {
         }, 
         {
           title: '基本组件',
-          collapsable: true,
+          collapsable: false,
           children: [
-            'base/layout.md',
-            'base/icon.md',
-            'base/button.md',
-            'base/tag.md'
+            'base/BaseLayout.md',
+            'base/BaseIcon.md',
+            'base/BaseButton.md',
+            'base/BaseTag.md'
           ]
         },
         {
           title: '表单类组件',
-          collapsable: true,
+          collapsable: false,
           children: []
         },
         {
           title: '弹窗类组件',
-          collapsable: true,
+          collapsable: false,
           children: []
         },
         {
           title: '导航类组件',
-          collapsable: true,
+          collapsable: false,
           children: []
         }
       ]
