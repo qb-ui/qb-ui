@@ -1,9 +1,10 @@
-import qbButton from './button/index'
-import qbButtonGroup from './button-group/index'
-import qbIcon from './icon/index'
-import qbRow from './row/index'
-import qbCol from './col/index'
-import qbTag from './tag/index'
+// 基本组件
+import qbButton from './packages/button'
+import qbButtonGroup from './packages/button-group'
+import qbIcon from './packages/icon'
+import qbRow from './packages/row'
+import qbCol from './packages/col'
+import qbTag from './packages/tag'
 
 const components = [
   qbButton,
@@ -19,16 +20,14 @@ const install = function (Vue) {
   components.map(component => Vue.component(component.name, component))
 }
 
+/**
+ * Global Install
+ */
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
 export default {
   install,
-  qbButton,
-  qbButtonGroup,
-  qbIcon,
-  qbRow,
-  qbCol,
-  qbTag
+  ...components
 }

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'QbButtonGroup'
-  };
+export default {
+  name: 'QbButtonGroup'
+}
 </script>
