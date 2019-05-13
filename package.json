@@ -1,16 +1,16 @@
 {
   "name": "qb-ui",
   "version": "1.0.0",
-  "description": "wmaqingbo自定义组件库",
-  "author": "wmaqingbo <wmaqingbo@163.com>",
-  "private": true,
+  "description": "vue组件库",
+  "author": "wmaqingbo@163.com",
+  "private": false,
   "keywords": [
     "qb-ui",
     "96-ui",
     "vue",
     "组件库"
   ],
-  "main": "dist/qb-ui.min.js",
+  "main": "dist/qb.min.js",
   "files": [
     "dist",
     "packages"
@@ -24,12 +24,11 @@
     "url": "https://github.com/qb-ui/qb-ui/issues"
   },
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "dev": "npm run docs:dev",
+    "build": "node build/build.js",
+    "lint": "eslint --ext .js,.vue src",
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "deploy:build": "npm run docs:build && gh-pages -d docs/.vuepress/dist"
   },
@@ -84,7 +83,6 @@
     "uglifyjs-webpack-plugin": "^2.1.2",
     "url-loader": "^1.1.2",
     "vue-loader": "^15.7.0",
-    "vue-markdown-loader": "^2.4.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "vuepress": "^0.14.10",

@@ -3,10 +3,10 @@
 </template>
 
 <script>
-  export default {
-    name: 'QbIcon',
-    props: {
-      name: String
-    }
-  };
+export default {
+  name: 'QbIcon',
+  props: {
+    name: String
+  }
+}
 </script>
