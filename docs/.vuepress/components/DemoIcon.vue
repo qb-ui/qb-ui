@@ -33,6 +33,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../src/packages/theme-default/src/common/var.scss';
+
 .demo-icon {
   .icon--wrap {
     display: flex;
@@ -55,11 +57,11 @@ export default {
   &:hover {
     .icon--wrap {
       > i {
-        color: #3eaf91;
+        color: $--color-primary;
       }
     }
     .icon--name {
-      color: #3eaf91;
+      color: $--color-primary;
     }
   }
 }

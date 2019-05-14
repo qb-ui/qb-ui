@@ -49,6 +49,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../src/packages/theme-default/src/common/var.scss';
+
 .demo {
     // box-shadow: 0 0 2px 0 rgba(232, 237, 250, 0.6),
     //   0 1px 2px 0 rgba(232, 237, 250, 0.5);
@@ -84,7 +86,7 @@ export default {
   }
   .code--button {
     background: #fff;
-    color: lighten($color: #409eff, $amount: 20%);
+    color: lighten($color: $--color-primary, $amount: 20%);
     font-size: 14px;
     line-height: 40px;
     text-align: center;
@@ -96,7 +98,7 @@ export default {
     transition: all 0.3s;
     &:hover {
       background-color: #f9fafc;
-      color: #409eff;
+      color: $--color-primary;
     }
   }
   & + .code {
