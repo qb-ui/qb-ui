@@ -1,7 +1,6 @@
 <template>
   <div
     class="demo-icon"
-    title="点击复制"
     v-clipboard:copy="`qb-icon-${iconName}`"
     v-clipboard:success="onCopy"
     v-clipboard:error="onError"
@@ -36,13 +35,16 @@ export default {
 @import '../../../src/packages/theme-default/src/common/var.scss';
 
 .demo-icon {
+  padding: 20px 0;
+  transition: all .3s;
   .icon--wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     > i {
-      font-size: 36px;
-      transition: all 0.3s;
+      font-size: 24px;
+      transition: all .3s;
     }
   }
   .icon--name {
@@ -51,10 +53,11 @@ export default {
     align-items: center;
     font-size: 12px;
     color: #a1aab8;
-    padding: 5px 0 15px 0;
+    padding: 5px 0 0 0;
     transition: all 0.3s;
   }
   &:hover {
+    background-color: #e5e9f2;
     .icon--wrap {
       > i {
         color: $--color-primary;

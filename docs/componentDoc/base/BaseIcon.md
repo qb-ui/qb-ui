@@ -4,16 +4,16 @@ title: 'Icon 图标字体'
 
 ## Icon 图标字体
 
-<demo-block title="使用方法" desc="qb-ui 图标字体使用的是开源的 Feather 图标库，通过设置类名为 qb-icon-iconName 来使用。例如：">
+<demo-block title="使用方法" desc="qb-ui 图标字体使用的是开源的 <a href='https://feathericons.com/'>Feather</a> 图标库，通过设置类名为 <code>qb-icon-iconName</code> 来使用。例如：">
   <template slot="demoContent">
-    <i class="qb-icon-activity" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-alert-octagon" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-alert-triangle" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-arrow-left-circle" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-bell-off" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-calendar" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-camera" style="font-size:36px;margin:0 5px"></i>
-    <i class="qb-icon-check-circle" style="font-size:36px;margin:0 5px"></i>
+    <i class="qb-icon-activity" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-alert-octagon" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-alert-triangle" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-arrow-left-circle" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-bell-off" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-calendar" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-camera" style="font-size:24px;margin:0 5px"></i>
+    <i class="qb-icon-check-circle" style="font-size:24px;margin:0 5px"></i>
   </template>
 
   <highlight-code slot="codeText" lang="html">
@@ -28,7 +28,7 @@ title: 'Icon 图标字体'
   </highlight-code>
 </demo-block>
 
-<demo-block title="所有图标">
+<demo-block title="所有图标" desc="点击图标复制名称。">
   <template slot="demoContent">
     <qb-row type="flex" style="flex-wrap:wrap">
       <qb-col :span="4"><demo-icon iconName="activity"></demo-icon></qb-col>

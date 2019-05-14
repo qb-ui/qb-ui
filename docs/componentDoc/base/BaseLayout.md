@@ -6,7 +6,7 @@ title: 'Layout 布局'
 
 栅格化设计是按照一定的规则把页面分成固定的相同宽度，然后列出各种组合的可能性，以便于在进行页面呈现的时候能够快速的进行布局。市面上一般使用 `12栅格` 系统，也有采用 `8栅格` 系统的，但是随着设备屏幕越来越大，传统的 `12栅格` 系统在一些业务场景下，没办法很好的解决元素布局的问题，所以我们使用了 `24栅格` 系统。也就是将页面区域 24 等分。
 
-<demo-block title="基础布局" desc="通过 row 和 col 组件，并通过 col 组件的 span 属性我们就可以自由地组合布局。">
+<demo-block title="基础布局" desc="通过 <code>row</code> 和 <code>col</code> 组件，并通过 <code>col</code> 组件的 <code>span</code> 属性我们就可以自由地组合布局。">
   <template slot="demoContent">
     <qb-row>
       <qb-col><grid-content bg2></grid-content></qb-col>
@@ -54,7 +54,7 @@ title: 'Layout 布局'
   </highlight-code>
 </demo-block>
 
-<demo-block title="分栏间隔" desc="Row 组件 提供 gutter 属性来指定每一栏之间的间隔，默认间隔为 0。">
+<demo-block title="分栏间隔" desc="<code>rol</code> 组件 提供 <code>gutter</code> 属性来指定每一栏之间的间隔，默认间隔为 0。">
   <template slot="demoContent">
     <qb-row :gutter="20">
       <qb-col :span="4"><grid-content bg3></grid-content></qb-col>
@@ -116,7 +116,7 @@ title: 'Layout 布局'
   </highlight-code>
 </demo-block>
 
-<demo-block title="分栏偏移" desc="使用 offset 来偏移指定的栏数。">
+<demo-block title="分栏偏移" desc="使用 <code>offset</code> 属性来偏移指定的栏数。">
   <template slot="demoContent">
     <qb-row :gutter="24">
       <qb-col :span="6"><grid-content bg2></grid-content></qb-col>
@@ -146,7 +146,7 @@ title: 'Layout 布局'
   </highlight-code>
 </demo-block>
 
-<demo-block title="对齐方式" desc="通过 flex 布局来对分栏进行灵活的对齐。<br/>将 type 属性赋值为 'flex'，可以启用 flex 布局，并可通过 justify 属性来指定 start, center, end, space-between, space-around 其中的值来定义子元素的排版方式。">
+<demo-block title="对齐方式" desc="通过 <code>flex</code> 布局来对分栏进行灵活的对齐。<br/>将 <code>type</code> 属性赋值为 <code>flex</code>，可以启用 <code>flex</code> 布局，并可通过 <code>justify</code> 属性来指定 <code>start</code>, <code>center</code>, <code>end</code>, <code>space-between</code>, <code>space-around</code> 其中的值来定义子元素的排版方式。">
   <template slot="demoContent">
     <qb-row type="flex">
       <qb-col :span="6"><grid-content bg2></grid-content></qb-col>
@@ -204,7 +204,7 @@ title: 'Layout 布局'
   </highlight-code>
 </demo-block>
 
-<demo-block title="响应式布局" desc="参照了 Bootstrap 的 响应式设计，预设了五个响应尺寸：xs、sm、md、lg 和 xl。">
+<demo-block title="响应式布局" desc="参照了 <a href='https://getbootstrap.com/docs/4.3/layout/overview/#responsive-breakpoints'>Bootstrap</a> 的 响应式设计，预设了四个响应尺寸：<code>sm:768px</code>、<code>md:992px</code>、<code>lg:1200px</code>、<code>xl:1920px</code>">
   <template slot="demoContent">
     <qb-row :gutter="20">
       <qb-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1"><grid-content bg2></grid-content></qb-col>
