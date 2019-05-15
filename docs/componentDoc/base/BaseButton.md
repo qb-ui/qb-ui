@@ -170,6 +170,8 @@ title: 'Button 按钮'
   <template slot="demoContent">
     <qb-row>
       <qb-button type="primary" loading>加载中</qb-button>
+      <qb-button type="primary" loading></qb-button>
+      <qb-button type="primary" loading circle></qb-button>
     </qb-row>
   </template>
 
