@@ -4,7 +4,7 @@ title: 'Tag 标签'
 
 ## Tag 标签
 
-<demo-block title="主题颜色" desc="使用 type 属性来改变标签的主题颜色，也可以通过 color 属性来自定义背景色。">
+<demo-block title="主题颜色" desc="使用 <code>type</code> 属性来改变标签的主题颜色，也可以通过 <code>color</code> 属性来自定义背景色。">
   <template slot="demoContent">
     <qb-tag>默认</qb-tag>
     <qb-tag type="success" style="margin-left:10px">成功</qb-tag>
@@ -44,7 +44,7 @@ title: 'Tag 标签'
   </highlight-code>
 </demo-block>
 
-<demo-block title="可关闭" desc="使用 closable 属性来决定是否显示关闭按钮，这是一个 Boolean 值。">
+<demo-block title="可关闭" desc="使用 <code>closable</code> 属性来决定是否显示关闭按钮，这是一个 Boolean 值。">
   <template slot="demoContent">
     <qb-tag closable>默认</qb-tag>
     <qb-tag type="success" closable style="margin-left:10px">成功</qb-tag>
@@ -62,7 +62,7 @@ title: 'Tag 标签'
   </highlight-code>
 </demo-block>
 
-<demo-block title="尺寸大小" desc="使用 size 属性来改变标签的大小，除默认尺寸外还有三种尺寸大小：<code>medium</code> / <code>small</code> / <code>mini</code>.">
+<demo-block title="尺寸大小" desc="使用 <code>size</code> 属性来改变标签的大小，除默认尺寸外还有三种尺寸大小：<code>medium</code>、 <code>small</code> 、<code>mini</code>.">
   <template slot="demoContent">
     <qb-tag closable>默认尺寸</qb-tag>
     <qb-tag closable size="medium" style="margin-left:10px">medium 尺寸</qb-tag>
