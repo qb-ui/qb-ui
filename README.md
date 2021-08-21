@@ -12,6 +12,8 @@ qb-ui 是一款基于 Vue.js 2.0 的前端 UI 组件库，主要用于快速开�
 使用 npm + webpack + babel 的工作流，支持 ES2015
 提供友好的 API，可灵活的使用组件
 
-## 浏览器支持
+## 注意事项
 
-现代浏览器和 IE9 及以上
+- 支持现代浏览器和 IE9 及以上
+- 建议使用 yarn 安装依赖
+- node-sass 安装出错时请注意本地的 nodejs 版本，参考 [node-sass](https://www.npmjs.com/package/node-sass)
